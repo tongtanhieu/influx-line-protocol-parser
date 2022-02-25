@@ -3,7 +3,7 @@
 The line protocol is a text based format for writing points to InfluxDB. This library provides a simple parser to generate a JavaScript Object from a provided line.
 
 ## Getting Started
-Install the module with: `npm install influx-line-protocol-parser`
+~~Install the module with: `npm install influx-line-protocol-parser`~~
 
 ## Examples
 
@@ -18,14 +18,14 @@ console.log(point);
 {
     measurement: 'cpu_load_short',
     timestamp: 1422568543702900257,
-    fields: [{
+    fields: {
         value: 2
-    }],
-    tags:[
-        {direction: 'in'},
-        {host: 'server01'},
-        {region: 'us-west'},
-    ]
+    },
+    tags:{
+        direction: 'in',
+        host: 'server01',
+        region: 'us-west',
+    }
 }
 ```
 
